@@ -13,7 +13,7 @@ public class Main {
         Animals simba = new Animals("Simba", "Liūtas", true, "Hakuna Matata",1994, "Ruda, kreminė, auksinė.", 1.20);
         Animals pumba = new Animals("Pumba", "Karpuotis", true, "Hakuna Matata", 1994, "Juoda, ruda, rožinė", 0.84);
         Animals timon = new Animals("Timonas", "Surikata", true, "Hakuna Matata", 1994, "Ruda, kreminė, raudona", 0.30);
-        Animals sidney = new Animals("Sidnis", "Tinginys", true, "Ledo,Sniego, Bandos Slėniai", 2002, "Šviesiai geltona", 1.5);
+        Animals sidney = new Animals("Sidas", "Tinginys", true, "Ledo,Sniego, Bandos Slėniai", 2002, "Šviesiai geltona", 1.5);
         Animals manny = new Animals("Menis", "Mamutas", true, "Bandos Slėnis", 2002, "Tamsiai ruda", 6.57);
         Animals diego = new Animals("Diegas", "Kardadantis tigras", true, "Ledo/Sniego Slėnis", 2002,"Šviesi oranžinė",1.00);
         Animals rudy = new Animals("Rudis", "Barioniksas", true,"Dino pasaulis", 2009, "pilka", 9.00);
@@ -47,14 +47,14 @@ public class Main {
                     System.out.println("Gyvūnų sąrašas");
                     printAnimals(animals);
                     break;
-                case 2:
-                    System.out.println("Galite pridėti gyvūną");
-                    addAnimal(sc, animals);
-                    break;
-                case 3:
-                    System.out.println("gGalite redaguoti gyvūną.");
-                    editAnimal(sc, animals);
-                    break;
+//                case 2:
+//                    System.out.println("Galite pridėti gyvūną");
+//                    addAnimal(sc, animals);
+//                    break;
+//                case 3:
+//                    System.out.println("gGalite redaguoti gyvūną.");
+//                    editAnimal(sc, animals);
+//                    break;
                 case 4:
                     System.out.println("Galite pašalinti gyvūną.");
                     deleteAnimal(sc, animals);
@@ -65,7 +65,7 @@ public class Main {
             System.out.println("..............................................");
         }
 
-    }
+    }1
 
     public static void menu() {
         System.out.println("Norite pamatyti gyvūnų sąrašą? Spauskite 1.");
@@ -82,18 +82,18 @@ public class Main {
         }
     }
 
-    public static void addAnimal(Scanner sc, ArrayList<Animals> arr) {
-        arr.add(sc.nextLine());
-    }
+//    public static void addAnimal(Scanner sc, ArrayList<Animals> arr) {
+//        arr.add(sc.nextLine());
+//    }
 
-    public static void editAnimal(Scanner sc, ArrayList<Animals> arr) {
-        printAnimals(arr);
-        System.out.println("Pasirinkite gyvūną, kurį norite readaguoti.");
-        int nr = sc.nextInt();
-        sc.nextLine();
-        System.out.println("Jūsų redaguojamas gyvūnas yra: " + arr.get(nr - 1) + ". Suveskite jo naują informaciją");
-        arr.set(nr - 1, sc.nextLine());
-    }
+//    public static void editAnimal(Scanner sc, ArrayList<Animals> arr) {
+//        printAnimals(arr);
+//        System.out.println("Pasirinkite gyvūną, kurį norite readaguoti.");
+//        int nr = sc.nextInt();
+//        sc.nextLine();
+//        System.out.println("Jūsų redaguojamas gyvūnas yra: " + arr.get(nr - 1) + ". Suveskite jo naują informaciją");
+//        arr.set(nr - 1, sc.nextLine());
+//    }
 
     public static void deleteAnimal(Scanner sc, ArrayList<Animals> arr) {
         printAnimals(arr);

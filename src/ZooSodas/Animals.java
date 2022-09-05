@@ -55,10 +55,7 @@ public class Animals {
     }
 
     public Integer getAge() {
-//        while (LocalDate today = LocalDate.now();
-//        LocalDate birthDate = LocalDate.of(age);
-//        int years = Period.between(birthDate, today).getYears();)
-            return age;
+        return LocalDate.now().getYear() - this.age;
     }
 
     public void setAge(Integer age) {
@@ -104,7 +101,7 @@ public class Animals {
                 "Rūšis = " + species +"\n"+
                 "Lytis = " + (gender ? "Patinas" : "Patelė" )+"\n"+
                 "Ankstesnė gyvenamoji vieta = " + previousResidence + "\n"+
-                "Amžius = " + height + "m" +"\n"+
+                "Amžius = " + getAge() + "m" +"\n"+
                 "Gyvūno spalva = " + color +"\n"+
                 "Suaugusio gyvūno aukštis = " + height + "\n";
     }
